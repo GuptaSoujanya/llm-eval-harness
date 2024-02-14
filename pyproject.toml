@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-eval-harness"
+version = "0.3.5"
+description = "Extensible, production-grade LLM evaluation harness for open-source models and APIs."
+readme = "README.md"
+authors = [{ name = "Soujanya Gupta", email = "158287001+GuptaSoujanya@users.noreply.github.com" }]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+
+[project.scripts]
+llm-eval = "eval_harness.cli:main"

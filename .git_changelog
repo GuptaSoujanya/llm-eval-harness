@@ -9,3 +9,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-02-25] feat: tasks: implement abstract BaseTask and Sample dataclasses
 - [2024-02-29] feat: tasks: add GSM8K multi-step reasoning task parser
 - [2024-03-04] feat: metrics: implement normalized numeric string extractor
+- [2024-03-08] test: add unit tests for GSM8K answer extraction and edge cases

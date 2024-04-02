@@ -1,0 +1,6 @@
+# Engineering Changelog: llm-eval-harness
+
+Inception Date: 2024-04-02
+Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
+
+- [2024-04-02] chore: scaffold repository layout and pyproject.toml configuration

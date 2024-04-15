@@ -5,3 +5,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 
 - [2024-04-02] chore: scaffold repository layout and pyproject.toml configuration
 - [2024-04-08] feat: models: implement BaseLLMProvider interface and abstract methods
+- [2024-04-15] feat: models: add MockLLMProvider for offline deterministic validation

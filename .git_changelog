@@ -19,3 +19,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-04-04] fix: sanitize globals namespace in code execution sandbox
 - [2024-04-08] test: add unit tests for pass@k estimator convergence
 - [2024-04-12] feat: cli: implement unified typer/argparse command line interface
+- [2024-04-16] feat: reporters: add markdown table formatting for benchmark results

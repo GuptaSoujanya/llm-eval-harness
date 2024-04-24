@@ -21,3 +21,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-04-12] feat: cli: implement unified typer/argparse command line interface
 - [2024-04-16] feat: reporters: add markdown table formatting for benchmark results
 - [2024-04-20] feat: reporters: add structured JSON export for evaluation runs
+- [2024-04-24] ci: configure GitHub Actions automated matrix across Python 3.10-3.12

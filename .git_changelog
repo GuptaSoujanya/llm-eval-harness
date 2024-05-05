@@ -8,3 +8,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-04-15] feat: models: add MockLLMProvider for offline deterministic validation
 - [2024-04-21] feat: tasks: implement abstract BaseTask and Sample dataclasses
 - [2024-04-28] feat: tasks: add GSM8K multi-step reasoning task parser
+- [2024-05-05] feat: metrics: implement normalized numeric string extractor

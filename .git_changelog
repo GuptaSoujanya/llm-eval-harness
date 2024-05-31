@@ -12,3 +12,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-05-11] test: add unit tests for GSM8K answer extraction and edge cases
 - [2024-05-18] feat: tasks: implement MMLU few-shot multiple choice evaluation
 - [2024-05-24] feat: metrics: add log-likelihood choice probability scoring
+- [2024-05-31] fix: handle multi-letter edge cases in MMLU regex parsing

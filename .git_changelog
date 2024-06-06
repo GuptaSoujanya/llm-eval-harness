@@ -32,3 +32,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-05-25] feat: tasks: add GSM8K 8-shot chain-of-thought prompt templates
 - [2024-05-29] docs: add hardware throughput benchmark table for NVIDIA H100 SXM5
 - [2024-06-02] feat: tasks: add MMLU-Pro 10-choice hardened benchmark task
+- [2024-06-06] fix: correct decimal point rounding in currency exact match scoring

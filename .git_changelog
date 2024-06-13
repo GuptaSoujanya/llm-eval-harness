@@ -14,3 +14,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-05-24] feat: metrics: add log-likelihood choice probability scoring
 - [2024-05-31] fix: handle multi-letter edge cases in MMLU regex parsing
 - [2024-06-07] test: add test suite for MMLU question extraction and choices
+- [2024-06-13] feat: metrics: implement Chen et al unbiased pass@k formulation

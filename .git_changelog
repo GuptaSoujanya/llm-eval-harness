@@ -36,3 +36,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-06-10] test: add unit tests for MMLU-Pro answer normalization
 - [2024-06-13] feat: cli: add --temperature and --top-p sampling overrides
 - [2024-06-17] perf: reduce token copy overhead during batched prompt encoding
+- [2024-06-21] docs: add comparative performance table for Llama-3.3-70B and Qwen-2.5-72B

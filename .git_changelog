@@ -38,3 +38,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-06-17] perf: reduce token copy overhead during batched prompt encoding
 - [2024-06-21] docs: add comparative performance table for Llama-3.3-70B and Qwen-2.5-72B
 - [2024-06-25] feat: models: implement speculative decoding parameter support
+- [2024-06-29] fix: guard against empty string generation outputs in tokenizer

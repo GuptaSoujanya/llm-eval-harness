@@ -44,3 +44,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-07-11] docs: update README with DeepSeek-V2.5 benchmark metrics
 - [2024-07-15] feat: tasks: add MATH competition reasoning evaluation subset
 - [2024-07-19] feat: metrics: implement LaTeX algebraic expression simplifier
+- [2024-07-22] test: add unit tests for LaTeX exact match equivalence

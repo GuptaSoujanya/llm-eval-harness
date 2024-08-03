@@ -47,3 +47,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-07-22] test: add unit tests for LaTeX exact match equivalence
 - [2024-07-26] fix: handle fraction and matrix LaTeX formatting edge cases
 - [2024-07-30] feat: models: add Ollama local REST API model provider
+- [2024-08-03] test: verify Ollama model provider handles streaming response chunks

@@ -49,3 +49,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-07-30] feat: models: add Ollama local REST API model provider
 - [2024-08-03] test: verify Ollama model provider handles streaming response chunks
 - [2024-08-07] perf: stream task samples to prevent out-of-memory on 100k question datasets
+- [2024-08-11] feat: reporters: add HTML interactive report generation with charts

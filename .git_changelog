@@ -51,3 +51,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-08-07] perf: stream task samples to prevent out-of-memory on 100k question datasets
 - [2024-08-11] feat: reporters: add HTML interactive report generation with charts
 - [2024-08-15] docs: document distributed multi-GPU benchmarking setup with DeepSpeed
+- [2024-08-19] feat: cli: add --limit flag to support fast sub-sample smoke testing

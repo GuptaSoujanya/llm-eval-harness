@@ -54,3 +54,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-08-19] feat: cli: add --limit flag to support fast sub-sample smoke testing
 - [2024-08-23] fix: ensure deterministic prompt ordering when shuffle=False
 - [2024-08-27] test: add regression test for exact benchmark score reproducibility
+- [2024-08-30] feat: tasks: implement IFEval (Instruction Following Evaluation) task parser

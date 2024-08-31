@@ -26,3 +26,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-08-12] perf: optimize prompt batching loop to reduce memory allocations
 - [2024-08-18] feat: models: add HuggingFace pipeline integration wrapper
 - [2024-08-25] feat: models: add vLLM async inference engine backend
+- [2024-08-31] fix: resolve token truncation edge case when max_tokens is None

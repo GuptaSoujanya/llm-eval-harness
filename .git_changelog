@@ -29,3 +29,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-08-31] fix: resolve token truncation edge case when max_tokens is None
 - [2024-09-07] test: add regression tests for vLLM streaming generator
 - [2024-09-14] perf: vectorize pass@k combination calculations
+- [2024-09-20] feat: tasks: add GSM8K 8-shot chain-of-thought prompt templates

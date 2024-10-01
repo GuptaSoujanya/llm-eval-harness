@@ -62,3 +62,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-09-19] feat: reporters: format benchmark summaries with colorized terminal metrics
 - [2024-09-23] fix: correct calculation of confidence intervals on pass@1 scores
 - [2024-09-27] feat: tasks: add ARC-Challenge science reasoning task split
+- [2024-10-01] feat: metrics: implement majority voting consistency estimator

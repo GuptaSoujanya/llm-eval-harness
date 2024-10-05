@@ -63,3 +63,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-09-23] fix: correct calculation of confidence intervals on pass@1 scores
 - [2024-09-27] feat: tasks: add ARC-Challenge science reasoning task split
 - [2024-10-01] feat: metrics: implement majority voting consistency estimator
+- [2024-10-05] test: verify self-consistency majority vote improves reasoning accuracy

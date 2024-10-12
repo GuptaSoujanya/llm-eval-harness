@@ -65,3 +65,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-10-01] feat: metrics: implement majority voting consistency estimator
 - [2024-10-05] test: verify self-consistency majority vote improves reasoning accuracy
 - [2024-10-08] docs: add self-consistency pass@k validation study in documentation
+- [2024-10-12] feat: cli: add --num-samples flag for greedy vs sampling comparisons

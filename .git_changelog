@@ -68,3 +68,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-10-12] feat: cli: add --num-samples flag for greedy vs sampling comparisons
 - [2024-10-16] fix: prevent thread starvation in parallel sample evaluation worker pool
 - [2024-10-20] perf: optimize memory footprint by clearing KV cache between benchmark tasks
+- [2024-10-24] test: add stress tests verifying memory remains stable over 500 consecutive evals

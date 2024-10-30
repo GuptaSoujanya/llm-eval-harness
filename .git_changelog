@@ -35,3 +35,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-10-10] fix: correct decimal point rounding in currency exact match scoring
 - [2024-10-17] test: add unit tests for MMLU-Pro answer normalization
 - [2024-10-23] feat: cli: add --temperature and --top-p sampling overrides
+- [2024-10-30] perf: reduce token copy overhead during batched prompt encoding

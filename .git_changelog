@@ -71,3 +71,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-10-24] test: add stress tests verifying memory remains stable over 500 consecutive evals
 - [2024-10-28] feat: reporters: add CSV summary export for automated CI benchmark gates
 - [2024-11-01] docs: document CI benchmark gating to prevent model regression in PRs
+- [2024-11-05] chore: bump version to v0.5.2 and stabilize benchmark task schemas

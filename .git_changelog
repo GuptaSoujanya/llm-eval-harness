@@ -74,3 +74,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-11-05] chore: bump version to v0.5.2 and stabilize benchmark task schemas
 - [2024-11-09] feat: models: add vLLM tensor-parallel evaluation configuration
 - [2024-11-13] feat: tasks: implement GPQA (Google-Proof Q&A) Diamond subset task
+- [2024-11-16] test: verify GPQA multi-choice accuracy scoring matches official protocol

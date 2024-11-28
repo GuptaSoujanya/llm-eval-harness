@@ -77,3 +77,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-11-16] test: verify GPQA multi-choice accuracy scoring matches official protocol
 - [2024-11-20] fix: resolve unicode escaping in mathematical theorem prompts
 - [2024-11-24] docs: update benchmark results table with LLaMA-3-8B and Mistral-7B baselines
+- [2024-11-28] perf: pre-allocate tensor buffers for batched log-likelihood queries

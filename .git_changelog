@@ -84,3 +84,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-12-14] docs: publish full benchmark leaderboard reproduction instructions
 - [2024-12-18] chore: finalize v0.9.0 release metadata
 - [2025-01-15] feat: release v1.0.0 production milestone with verified evaluation protocols
+- [2025-02-05] docs: add comprehensive v1.0.0 release notes covering all 8 benchmark tasks

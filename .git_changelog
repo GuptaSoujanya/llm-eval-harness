@@ -46,3 +46,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2025-01-10] feat: tasks: add MATH competition reasoning evaluation subset
 - [2025-01-20] feat: metrics: implement LaTeX algebraic expression simplifier
 - [2025-01-30] test: add unit tests for LaTeX exact match equivalence
+- [2025-02-09] fix: handle fraction and matrix LaTeX formatting edge cases

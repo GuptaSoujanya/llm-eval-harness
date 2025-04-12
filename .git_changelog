@@ -87,3 +87,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2025-02-05] docs: add comprehensive v1.0.0 release notes covering all 8 benchmark tasks
 - [2025-02-27] feat: tasks: implement LiveCodeBench competitive programming test harness
 - [2025-03-21] feat: sandbox: harden code execution container with seccomp syscall filtering
+- [2025-04-12] test: verify code execution sandbox blocks network access and filesystem write

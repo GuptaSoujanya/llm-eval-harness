@@ -1,0 +1,26 @@
+{
+  "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "evaluation_date": "2025-04-20T14:00:00Z",
+  "results": {
+    "gsm8k": {
+      "total_samples": 1319,
+      "metrics": {
+        "accuracy": 0.796,
+        "exact_match": 0.796
+      }
+    },
+    "mmlu": {
+      "total_samples": 57,
+      "metrics": {
+        "accuracy": 0.684
+      }
+    },
+    "humaneval": {
+      "total_samples": 164,
+      "metrics": {
+        "pass@1": 0.622,
+        "success_rate": 0.622
+      }
+    }
+  }
+}

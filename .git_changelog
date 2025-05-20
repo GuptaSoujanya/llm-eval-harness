@@ -56,3 +56,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2025-04-20] fix: ensure deterministic prompt ordering when shuffle=False
 - [2025-04-30] test: add regression test for exact benchmark score reproducibility
 - [2025-05-10] feat: tasks: implement IFEval (Instruction Following Evaluation) task parser
+- [2025-05-20] feat: metrics: add rule-based verifiable instruction constraints

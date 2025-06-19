@@ -59,3 +59,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2025-05-20] feat: metrics: add rule-based verifiable instruction constraints
 - [2025-05-30] test: add unit tests for IFEval word count and delimiter rules
 - [2025-06-09] perf: cache tokenized prompt lengths to avoid redundant tokenizer calls
+- [2025-06-19] docs: add comprehensive benchmarking methodology whitepaper in docs/

@@ -94,3 +94,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2025-07-09] test: verify GGUF provider accurately extracts token probabilities
 - [2025-07-31] fix: handle floating point underflow in long-sequence perplexity calculations
 - [2025-08-22] feat: reporters: add automatic regression detection comparing against baseline run
+- [2025-09-13] docs: add guide for configuring automated regression alerts in Slack and Discord

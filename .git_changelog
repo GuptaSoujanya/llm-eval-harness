@@ -68,3 +68,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2025-08-19] feat: sandbox: harden code execution container with seccomp syscall filtering
 - [2025-08-29] test: verify code execution sandbox blocks network access and filesystem write
 - [2025-09-08] perf: vectorize log-likelihood scoring for 10-choice MMLU-Pro prompts
+- [2025-09-18] docs: publish empirical comparison of local evaluation vs LMSYS Arena rankings

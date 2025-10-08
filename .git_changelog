@@ -70,3 +70,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2025-09-08] perf: vectorize log-likelihood scoring for 10-choice MMLU-Pro prompts
 - [2025-09-18] docs: publish empirical comparison of local evaluation vs LMSYS Arena rankings
 - [2025-09-28] feat: models: add llama.cpp GGUF local model execution provider
+- [2025-10-08] test: verify GGUF provider accurately extracts token probabilities

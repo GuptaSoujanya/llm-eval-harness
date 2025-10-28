@@ -72,3 +72,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2025-09-28] feat: models: add llama.cpp GGUF local model execution provider
 - [2025-10-08] test: verify GGUF provider accurately extracts token probabilities
 - [2025-10-18] fix: handle floating point underflow in long-sequence perplexity calculations
+- [2025-10-28] feat: reporters: add automatic regression detection comparing against baseline run

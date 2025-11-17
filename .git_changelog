@@ -74,3 +74,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2025-10-18] fix: handle floating point underflow in long-sequence perplexity calculations
 - [2025-10-28] feat: reporters: add automatic regression detection comparing against baseline run
 - [2025-11-07] docs: add guide for configuring automated regression alerts in Slack and Discord
+- [2025-11-17] chore: bump version to v1.2.0 with hardened security sandbox

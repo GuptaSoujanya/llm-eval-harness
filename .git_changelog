@@ -99,3 +99,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2025-10-27] chore: update dependencies and bump minimum PyTorch version
 - [2025-11-18] chore: stabilize public API exports
 - [2026-01-15] feat: add support for DeepSeek-V3 and LLaMA-3.3 70B benchmark evaluation
+- [2026-02-18] feat: implement multi-token prediction (MTP) acceptance verification harness

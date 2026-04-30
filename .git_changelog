@@ -84,3 +84,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2026-03-16] perf: accelerate prompt tokenization using rust-based fast tokenizers
 - [2026-03-31] fix: ensure compatibility with Python 3.12 and modern huggingface_hub releases
 - [2026-04-15] test: run full end-to-end regression test suite across all benchmark tasks
+- [2026-04-30] feat: models: add vLLM tensor-parallel evaluation configuration

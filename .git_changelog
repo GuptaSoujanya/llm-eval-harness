@@ -102,3 +102,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2026-02-18] feat: implement multi-token prediction (MTP) acceptance verification harness
 - [2026-03-24] test: verify MTP evaluation correctly scores multi-head token predictions
 - [2026-04-27] docs: add benchmark comparison of DeepSeek-V3 vs GPT-4o on GSM8K and HumanEval
+- [2026-05-31] perf: accelerate prompt tokenization using rust-based fast tokenizers

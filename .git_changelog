@@ -90,3 +90,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2026-06-15] fix: resolve unicode escaping in mathematical theorem prompts
 - [2026-06-30] docs: update benchmark results table with LLaMA-3-8B and Mistral-7B baselines
 - [2026-07-15] perf: pre-allocate tensor buffers for batched log-likelihood queries
+- [2026-07-30] chore: update pyproject.toml dependencies and lockfile

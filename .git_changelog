@@ -104,3 +104,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2026-04-27] docs: add benchmark comparison of DeepSeek-V3 vs GPT-4o on GSM8K and HumanEval
 - [2026-05-31] perf: accelerate prompt tokenization using rust-based fast tokenizers
 - [2026-07-04] fix: ensure compatibility with Python 3.12 and modern huggingface_hub releases
+- [2026-08-07] test: run full end-to-end regression test suite across all benchmark tasks

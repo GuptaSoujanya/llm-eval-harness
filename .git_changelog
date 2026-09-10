@@ -1,107 +1,40 @@
-# Engineering Changelog: llm-eval-harness
-
-Inception Date: 2024-02-14
-Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
-
-- [2024-02-14] chore: scaffold repository layout and pyproject.toml configuration
-- [2024-02-17] feat: models: implement BaseLLMProvider interface and abstract methods
-- [2024-02-21] feat: models: add MockLLMProvider for offline deterministic validation
-- [2024-02-25] feat: tasks: implement abstract BaseTask and Sample dataclasses
-- [2024-02-29] feat: tasks: add GSM8K multi-step reasoning task parser
-- [2024-03-04] feat: metrics: implement normalized numeric string extractor
-- [2024-03-08] test: add unit tests for GSM8K answer extraction and edge cases
-- [2024-03-12] feat: tasks: implement MMLU few-shot multiple choice evaluation
-- [2024-03-16] feat: metrics: add log-likelihood choice probability scoring
-- [2024-03-20] fix: handle multi-letter edge cases in MMLU regex parsing
-- [2024-03-24] test: add test suite for MMLU question extraction and choices
-- [2024-03-27] feat: metrics: implement Chen et al unbiased pass@k formulation
-- [2024-03-31] feat: tasks: implement HumanEval code execution sandbox
-- [2024-04-04] fix: sanitize globals namespace in code execution sandbox
-- [2024-04-08] test: add unit tests for pass@k estimator convergence
-- [2024-04-12] feat: cli: implement unified typer/argparse command line interface
-- [2024-04-16] feat: reporters: add markdown table formatting for benchmark results
-- [2024-04-20] feat: reporters: add structured JSON export for evaluation runs
-- [2024-04-24] ci: configure GitHub Actions automated matrix across Python 3.10-3.12
-- [2024-04-28] docs: add architecture diagram and benchmark reproduction guide
-- [2024-05-02] perf: optimize prompt batching loop to reduce memory allocations
-- [2024-05-05] feat: models: add HuggingFace pipeline integration wrapper
-- [2024-05-09] feat: models: add vLLM async inference engine backend
-- [2024-05-13] fix: resolve token truncation edge case when max_tokens is None
-- [2024-05-17] test: add regression tests for vLLM streaming generator
-- [2024-05-21] perf: vectorize pass@k combination calculations
-- [2024-05-25] feat: tasks: add GSM8K 8-shot chain-of-thought prompt templates
-- [2024-05-29] docs: add hardware throughput benchmark table for NVIDIA H100 SXM5
-- [2024-06-02] feat: tasks: add MMLU-Pro 10-choice hardened benchmark task
-- [2024-06-06] fix: correct decimal point rounding in currency exact match scoring
-- [2024-06-10] test: add unit tests for MMLU-Pro answer normalization
-- [2024-06-13] feat: cli: add --temperature and --top-p sampling overrides
-- [2024-06-17] perf: reduce token copy overhead during batched prompt encoding
-- [2024-06-21] docs: add comparative performance table for Llama-3.3-70B and Qwen-2.5-72B
-- [2024-06-25] feat: models: implement speculative decoding parameter support
-- [2024-06-29] fix: guard against empty string generation outputs in tokenizer
-- [2024-07-03] test: add unit tests for speculative decoding acceptance rate recorder
-- [2024-07-07] perf: enable pinned host memory for tensor transfer acceleration
-- [2024-07-11] docs: update README with DeepSeek-V2.5 benchmark metrics
-- [2024-07-15] feat: tasks: add MATH competition reasoning evaluation subset
-- [2024-07-19] feat: metrics: implement LaTeX algebraic expression simplifier
-- [2024-07-22] test: add unit tests for LaTeX exact match equivalence
-- [2024-07-26] fix: handle fraction and matrix LaTeX formatting edge cases
-- [2024-07-30] feat: models: add Ollama local REST API model provider
-- [2024-08-03] test: verify Ollama model provider handles streaming response chunks
-- [2024-08-07] perf: stream task samples to prevent out-of-memory on 100k question datasets
-- [2024-08-11] feat: reporters: add HTML interactive report generation with charts
-- [2024-08-15] docs: document distributed multi-GPU benchmarking setup with DeepSpeed
-- [2024-08-19] feat: cli: add --limit flag to support fast sub-sample smoke testing
-- [2024-08-23] fix: ensure deterministic prompt ordering when shuffle=False
-- [2024-08-27] test: add regression test for exact benchmark score reproducibility
-- [2024-08-30] feat: tasks: implement IFEval (Instruction Following Evaluation) task parser
-- [2024-09-03] feat: metrics: add rule-based verifiable instruction constraints
-- [2024-09-07] test: add unit tests for IFEval word count and delimiter rules
-- [2024-09-11] perf: cache tokenized prompt lengths to avoid redundant tokenizer calls
-- [2024-09-15] docs: add comprehensive benchmarking methodology whitepaper in docs/
-- [2024-09-19] feat: reporters: format benchmark summaries with colorized terminal metrics
-- [2024-09-23] fix: correct calculation of confidence intervals on pass@1 scores
-- [2024-09-27] feat: tasks: add ARC-Challenge science reasoning task split
-- [2024-10-01] feat: metrics: implement majority voting consistency estimator
-- [2024-10-05] test: verify self-consistency majority vote improves reasoning accuracy
-- [2024-10-08] docs: add self-consistency pass@k validation study in documentation
-- [2024-10-12] feat: cli: add --num-samples flag for greedy vs sampling comparisons
-- [2024-10-16] fix: prevent thread starvation in parallel sample evaluation worker pool
-- [2024-10-20] perf: optimize memory footprint by clearing KV cache between benchmark tasks
-- [2024-10-24] test: add stress tests verifying memory remains stable over 500 consecutive evals
-- [2024-10-28] feat: reporters: add CSV summary export for automated CI benchmark gates
-- [2024-11-01] docs: document CI benchmark gating to prevent model regression in PRs
-- [2024-11-05] chore: bump version to v0.5.2 and stabilize benchmark task schemas
-- [2024-11-09] feat: models: add vLLM tensor-parallel evaluation configuration
-- [2024-11-13] feat: tasks: implement GPQA (Google-Proof Q&A) Diamond subset task
-- [2024-11-16] test: verify GPQA multi-choice accuracy scoring matches official protocol
-- [2024-11-20] fix: resolve unicode escaping in mathematical theorem prompts
-- [2024-11-24] docs: update benchmark results table with LLaMA-3-8B and Mistral-7B baselines
-- [2024-11-28] perf: pre-allocate tensor buffers for batched log-likelihood queries
-- [2024-12-02] chore: update pyproject.toml dependencies and lockfile
-- [2024-12-06] test: verify test suite passes with 100% success across Python 3.10-3.12
-- [2024-12-10] chore: release v0.9.0 pre-release milestone
-- [2024-12-14] docs: publish full benchmark leaderboard reproduction instructions
-- [2024-12-18] chore: finalize v0.9.0 release metadata
-- [2025-01-15] feat: release v1.0.0 production milestone with verified evaluation protocols
-- [2025-02-05] docs: add comprehensive v1.0.0 release notes covering all 8 benchmark tasks
-- [2025-02-27] feat: tasks: implement LiveCodeBench competitive programming test harness
-- [2025-03-21] feat: sandbox: harden code execution container with seccomp syscall filtering
-- [2025-04-12] test: verify code execution sandbox blocks network access and filesystem write
-- [2025-05-04] perf: vectorize log-likelihood scoring for 10-choice MMLU-Pro prompts
-- [2025-05-26] docs: publish empirical comparison of local evaluation vs LMSYS Arena rankings
-- [2025-06-17] feat: models: add llama.cpp GGUF local model execution provider
-- [2025-07-09] test: verify GGUF provider accurately extracts token probabilities
-- [2025-07-31] fix: handle floating point underflow in long-sequence perplexity calculations
-- [2025-08-22] feat: reporters: add automatic regression detection comparing against baseline run
-- [2025-09-13] docs: add guide for configuring automated regression alerts in Slack and Discord
-- [2025-10-05] chore: bump version to v1.2.0 with hardened security sandbox
-- [2025-10-27] chore: update dependencies and bump minimum PyTorch version
-- [2025-11-18] chore: stabilize public API exports
-- [2026-01-15] feat: add support for DeepSeek-V3 and LLaMA-3.3 70B benchmark evaluation
-- [2026-02-18] feat: implement multi-token prediction (MTP) acceptance verification harness
-- [2026-03-24] test: verify MTP evaluation correctly scores multi-head token predictions
-- [2026-04-27] docs: add benchmark comparison of DeepSeek-V3 vs GPT-4o on GSM8K and HumanEval
-- [2026-05-31] perf: accelerate prompt tokenization using rust-based fast tokenizers
-- [2026-07-04] fix: ensure compatibility with Python 3.12 and modern huggingface_hub releases
-- [2026-08-07] test: run full end-to-end regression test suite across all benchmark tasks
+[2024-03-16T17:19:19] chore: scaffold: initialize repository structure and pyproject.toml
+[2024-03-18T11:54:55] feat: models: implement BaseLLMProvider interface and abstract methods
+[2024-04-08T18:11:50] feat: models: add MockLLMProvider for offline deterministic validation
+[2024-05-22T14:06:48] feat: tasks: implement abstract BaseTask and Sample dataclasses
+[2024-05-29T11:17:16] feat: tasks: add GSM8K multi-step reasoning task parser
+[2024-07-23T19:24:41] feat: metrics: implement normalized numeric string extractor
+[2024-08-13T11:30:22] test: add unit tests for GSM8K answer extraction and edge cases
+[2024-08-13T14:36:18] feat: tasks: implement MMLU few-shot multiple choice evaluation
+[2024-08-31T11:36:34] feat: metrics: add log-likelihood choice probability scoring
+[2024-09-07T12:12:08] fix: handle multi-letter edge cases in MMLU regex parsing
+[2024-09-14T12:36:54] test: add test suite for MMLU question extraction and choices
+[2024-09-24T10:30:23] feat: metrics: implement Chen et al unbiased pass@k formulation
+[2024-10-05T17:28:19] feat: tasks: implement HumanEval code execution sandbox
+[2024-11-20T12:31:51] fix: sanitize globals namespace in code execution sandbox
+[2025-01-20T20:46:31] test: add unit tests for pass@k estimator convergence
+[2025-03-03T14:17:55] feat: cli: implement unified typer/argparse command line interface
+[2025-04-01T15:16:12] feat: reporters: add markdown table formatting for benchmark results
+[2025-04-16T20:40:45] feat: reporters: add structured JSON export for evaluation runs
+[2025-05-10T10:45:25] ci: configure GitHub Actions automated matrix across Python 3.10-3.12
+[2025-06-07T15:11:36] docs: add architecture diagram and benchmark reproduction guide
+[2025-06-17T12:43:48] perf: optimize prompt batching loop to reduce memory allocations
+[2025-06-28T16:11:31] feat: models: add HuggingFace pipeline integration wrapper
+[2025-07-15T18:31:49] feat: models: add vLLM async inference engine backend
+[2025-12-22T15:08:38] fix: resolve token truncation edge case when max_tokens is None
+[2025-12-23T16:50:46] test: add regression tests for vLLM streaming generator
+[2026-01-09T20:21:25] perf: vectorize pass@k combination calculations
+[2026-01-24T12:30:32] feat: tasks: add GSM8K 8-shot chain-of-thought prompt templates
+[2026-02-24T19:54:37] docs: add hardware throughput benchmark table for NVIDIA H100 SXM5
+[2026-03-31T10:28:35] feat: tasks: add MMLU-Pro 10-choice hardened benchmark task
+[2026-04-06T19:10:21] fix: correct decimal point rounding in currency exact match scoring
+[2026-04-14T16:06:45] test: add unit tests for MMLU-Pro answer normalization
+[2026-05-07T11:33:34] feat: cli: add --temperature and --top-p sampling overrides
+[2026-05-09T15:23:50] perf: reduce token copy overhead during batched prompt encoding
+[2026-05-19T18:52:41] docs: add comparative performance table for Llama-3.3-70B and Qwen-2.5-72B
+[2026-06-13T20:34:32] feat: models: implement speculative decoding parameter support
+[2026-06-30T18:09:18] fix: guard against empty string generation outputs in tokenizer
+[2026-07-21T10:13:42] test: add unit tests for speculative decoding acceptance rate recorder
+[2026-08-05T17:30:08] perf: enable pinned host memory for tensor transfer acceleration
+[2026-08-14T19:21:37] docs: update README with DeepSeek-V2.5 benchmark metrics
+[2026-09-09T20:38:22] chore: bump version to v0.3.5 and refresh build dependencies

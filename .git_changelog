@@ -93,3 +93,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2026-07-30] chore: update pyproject.toml dependencies and lockfile
 - [2026-08-14] test: verify test suite passes with 100% success across Python 3.10-3.12
 - [2026-08-29] chore: release v1.4.0 pre-release milestone
+- [2026-09-13] docs: publish full benchmark leaderboard reproduction instructions

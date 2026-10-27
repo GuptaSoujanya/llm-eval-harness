@@ -16,3 +16,5 @@ class BaseLLMProvider(ABC):
         pass
     def generate_batch(self, prompts: List[str], **kwargs) -> List[GenerationOutput]:
         return [self.generate(p, **kwargs) for p in prompts]
+
+    # Greedy decoding token guard

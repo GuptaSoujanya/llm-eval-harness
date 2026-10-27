@@ -13,3 +13,6 @@ class EvalConfig:
     max_tokens: int = 512
     device: str = "cpu"
     extra_args: Dict[str, Any] = field(default_factory=dict)
+
+    speculative_model: Optional[str] = None
+    num_speculative_tokens: int = 5
